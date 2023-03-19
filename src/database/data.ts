@@ -3,7 +3,7 @@ export interface Event {
   events: String[]
 }
 
-const keyEvents: Event[] = [
+const Events: Event[] = [
   {
     "year": 1709,
     "events": [
@@ -276,4 +276,4 @@ const keyEvents: Event[] = [
   }
 ]
 
-export { keyEvents }
+export { Events }
