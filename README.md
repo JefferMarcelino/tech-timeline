@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/JefferMarcelino/tech-timeline">
-    <img src="public/gear-logo.png" alt="Logo" width="80" height="80">
+    <img src=".github/tech-timeline-logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Tech Timeline</h3>
