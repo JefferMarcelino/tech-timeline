@@ -1,8 +1,11 @@
-import EventTimeLine from "@/components/EventTimeLine";
-import { Event, Events } from "@/database/data"
+"use client";
 
-export default async function Home() {
-  const events: Event[] = Events
+import EventTimeLine from "@/components/EventTimeLine";
+import { Events } from "@/database/data"
+import { useSmoothScroll } from "@/hooks/useSmoothScroll";
+
+export default async function Home() {  
+  useSmoothScroll();
 
   return (
     <div className="max-w-7xl w-full mx-auto pt-0 p-5">
@@ -12,10 +15,10 @@ export default async function Home() {
       </div>
 
       <div className="flex flex-col items-center my-10 w-full">
-        { events && events?.map((yearEvents, index) => {
+        { Events && Events?.map((yearEvents, index) => {
           return (
             <div key={`${yearEvents.year}`} className="max-w-xs w-full year">
-              <h2 className="text-2xl font-bold relative -left-1">{`${ yearEvents.year }`}</h2>
+              <h2 className="text-2xl font-bold relative -left-1 mb-2">{`${ yearEvents.year }`}</h2>
               <div className="events">
                 {
                   yearEvents.events.map((event, index) => {

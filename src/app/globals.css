@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-[#F6F5F7] text-[#242E4C] dark:bg-[#252627] dark:text-[#F6F5F7] transition-colors duration-500
-}
-
 .year {
   @apply md:translate-x-[50%]
 }
